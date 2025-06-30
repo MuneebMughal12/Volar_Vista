@@ -7,7 +7,7 @@ import logo from "./logo_12345-removebg-preview.png";
 import bginterior from "./bginterior.jpg";
 import { motion } from "framer-motion";
 
-const BedroomSection = () => {
+const Interiors = () => {
     return (
         <div>
 
@@ -109,4 +109,4 @@ const BedroomSection = () => {
     );
 };
 
-export default BedroomSection;
+export default Interiors;
