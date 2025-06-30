@@ -7,7 +7,7 @@ import logo from "./logo_12345-removebg-preview.png";
 import bginterior from "./bginterior.jpg";
 import { motion } from "framer-motion";
 
-const Interiors = () => {
+const Interior = () => {
     return (
         <div>
 
@@ -109,4 +109,4 @@ const Interiors = () => {
     );
 };
 
-export default Interiors;
+export default Interior;

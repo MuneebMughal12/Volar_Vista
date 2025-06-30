@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import loadingImage from '../assets/robot.gif';
 
 // Lazy load the Interiors component
-const Interiors = lazy(() => import('../Components/Interior/Interiors'));
+const Interiors = lazy(() => import('../Components/Interior/Interior'));
 
 const Interior = () => {
   return (

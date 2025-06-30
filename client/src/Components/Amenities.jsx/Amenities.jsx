@@ -6,8 +6,8 @@ import Gym from "./gym.png"
 import Gym2 from "./gym2.png";
 import pool from "./Pool.png";
 import pool2 from "./Pool2.png";
-import Rooftop from "./Rooptop1.png"
-import Rooftop2 from "./Rooftop2.png";
+import Rooftop from "./Roop1.png"
+import Rooftop2 from "./roop2.png";
 import imagineBg from "./imagine.jpg";
 import Child from "./Child.png";
 import Child2 from "./Child2.png";
@@ -142,23 +142,6 @@ friends, and enjoy carefree fun—just steps from home.`,
 
         ))}
 
-        {/* Romantic Getaway Section */}
-        <div className="bg-[#142B2B] text-white p-10">
-          <div className="flex flex-col items-start">
-            <h2 className="md:text-4xl text-3xl font-bold">PERFECT</h2>
-            <h2 className="md:text-4xl text-3xl font-bold">ROMANTIC GETAWAY</h2>
-          </div>
-
-          <div className="relative mt-10">
-            <motion.img src={RomanticGetaway} alt="Romantic Getaway" className="w-full h-[70vh] object-cover rounded-lg shadow-lg" />
-          </div>
-          <p className="text-lg md:text-base lg:text-lg mt-4">
-            Immerse into the clear crystal water of your own private <br />
-            swimming pool or read an interesting book laying on the <br />
-            rest chair at the pool deck. To strengthen your relationship <br />
-            the next romantic getaway is within your reach.
-          </p>
-        </div>
       </section>
     </div>
   );
