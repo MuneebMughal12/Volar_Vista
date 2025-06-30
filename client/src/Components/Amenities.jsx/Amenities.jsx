@@ -9,9 +9,8 @@ import pool2 from "./Pool2.png";
 import Rooftop from "./Roop1.png"
 import Rooftop2 from "./roop2.png";
 import imagineBg from "./imagine.jpg";
-import Child from "./Child.png";
-import Child2 from "./Child2.png";
-import RomanticGetaway from "./RomanticGetaway.png";
+import Child from "./playingarea.png";
+import Child2 from "./playingarea2.png";
 
 
 
