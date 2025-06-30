@@ -10,7 +10,7 @@ const Footer = () => {
         
         {/* Left Section - Logo & Contact */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <img src={logo}alt="Skydale Logo" className="h-16" />
+          <img src={logo}alt="Skydale Logo" className="h-40" />
           {/* <p className="text-xl font-semibold tracking-wide mt-2">LIVE ON CLOUD 9</p> */}
 
           <div className="mt-4 text-sm">

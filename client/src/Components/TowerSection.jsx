@@ -92,9 +92,9 @@ const TowerSection = () => {
               { number: "9", label: "TOWN HOUSES" },
                   { number: "3", label: "3 Bed Apartments", type: "TYP-1" },
               { number: "6", label: "3 Bed Apartments", type: "TYP-2" },
-              { number: "6", label: " PUBLIC SWIMMING  ", type: "POOL" },
-              { number: "2", label: " KIDS PLAYING " , type: "AREA" },
-              { number: "35", label: " FITNESS GYM" },
+              { number: "1", label: " PUBLIC SWIMMING  ", type: "POOL" },
+              { number: "1", label: " KIDS PLAYING " , type: "AREA" },
+              { number: "1", label: " FITNESS GYM" },
             ].map((item, index) => (
               <div key={index} className="flex flex-col items-center">
                 <p className="text-3xl sm:text-4xl font-bold">{item.number}</p>

@@ -28,7 +28,7 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="VALOR VISTA"
-          className="h-24 w-24 object-contain"
+          className="h-32 w-32 "
         />
       </Link>
     </div>
