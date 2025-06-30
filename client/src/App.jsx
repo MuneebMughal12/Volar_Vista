@@ -13,7 +13,7 @@ import Gallerypage from "./Pages/Gallerypage";
 import Contactus from "./Pages/Contactus";
 import Download from "./Pages/Download";
 import Interior from "./Pages/Interior";
-import loadingImage from "./assets/robot.gif"; 
+import Logo from "./assets/logo_12345-removebg-preview.png"; 
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +36,7 @@ function App() {
     return (
          <div className="flex flex-col items-center justify-center h-screen bg-[#142B2B] ">
                <img
-                 src={loadingImage}
+                 src={Logo}
                  alt="Loading..."
                  className="w-96 h-96 mb-4 "
                />
