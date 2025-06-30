@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-// import TownHouseSection from '../Components/TownHouseSection';
+import loadingImage from '../assets/robot.gif'; 
 
 // Lazy load components
 const HeroSection = lazy(() => import('../Components/HeroSection'));
@@ -9,15 +9,24 @@ const AboutSection = lazy(() => import('../Components/AboutSection'));
 const Enquiry = lazy(() => import('../Components/Enquiry'));
 const UnitsSection = lazy(() => import('../Components/UnitsSection'));
 const AmenitiesSection = lazy(() => import('../Components/AmenitiesSection'));
-const TownHouseSection = lazy(() => import('../Components/TownHouseSection'));
 
 const Home = () => {
   return (
-    <Suspense fallback={<div className="text-black p-4 text-center">Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className="flex flex-col items-center justify-center h-screen bg-[#142B2B] ">
+          <img
+            src={loadingImage}
+            alt="Loading..."
+            className="w-96 h-96 mb-4 "
+          />
+         
+        </div>
+      }
+    >
       <div>
         <HeroSection />
         <CallBackForm />
-        <TownHouseSection />
         <TowerSection />
         <AboutSection />
         <Enquiry />

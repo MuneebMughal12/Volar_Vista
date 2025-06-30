@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import heroImage from "../assets/hEROBG.png";
+// import VedioBg from "../assets/VedioBg.mp4"
 
 const ResponsiveHeading = () => {
   const [letterSpacing, setLetterSpacing] = useState("2rem");
@@ -49,16 +50,17 @@ const ResponsiveHeading = () => {
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Background Image */}
-      <img
-        src={heroImage}
-        alt="Background"
-        className="absolute top-0 left-0 w-full h-full object-cover sm:object-cover"
-      />
+      {/* Background vedio */}
+  <img
+         src={heroImage}
+         alt="Background"
+         className="absolute top-0 left-0 w-full h-full object-cover"
+       />
+
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-white text-center px-4 sm:px-8">
-        
+
         {/* Responsive Heading with dynamic letterSpacing */}
         <ResponsiveHeading />
 
@@ -74,7 +76,7 @@ const HeroSection = () => {
             textShadow: "rgba(0, 0, 0, 0.4) 0px 4px 5px",
           }}
         >
-           VALOR VISTA
+          VALOR VISTA
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
@@ -88,7 +90,7 @@ const HeroSection = () => {
             textShadow: "rgba(0, 0, 0, 0.4) 0px 4px 5px",
           }}
         >
-           REDEFINE YOUR LIFE STYLE
+          REDEFINE YOUR LIFE STYLE
         </motion.p>
 
         <motion.p
@@ -104,7 +106,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
           className="mt-6 bg-[#324158] px-6 py-3 rounded-lg text-white font-semibold hover:bg-[#c08d31] transition-all text-lg sm:text-xl"
-          onClick={() => window.open("https://wa.me/+9203119019327", "_blank")}
+          onClick={() => window.open("https://wa.me/+233240301874", "_blank")}
         >
           WhatsApp Us
         </motion.button>
@@ -112,7 +114,7 @@ const HeroSection = () => {
 
       {/* Sticky WhatsApp Button */}
       <a
-        href="https://wa.me/+9203119019327"
+        href="https://wa.me/+233240301874"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-2 sm:bottom-6 sm:right-6 bg-green-500 p-3 sm:p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50"
