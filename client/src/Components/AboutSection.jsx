@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import Aboutbg from "../assets/whyvolarvista.png";
+import Aboutbg from "../assets/whyvolarvista.webp";
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {

@@ -1,10 +1,10 @@
 import "tailwindcss/tailwind.css";
 import { motion } from "framer-motion";
-import ABOUT from "./Aboutusbg.jpg";
-import Aminities from "./1.png";
-import skydle from "./6.png";
-import Ceo from "./imagechnage.jpeg";
-import Logo from "./logo_12345-removebg-preview.png"
+import ABOUT from "./Aboutusbg.webp";
+import Aminities from "./1.webp";
+import skydle from "./6.webp";
+import Ceo from "./imagechnage.webp";
+import Logo from "./logo_12345-removebg-preview.webp"
 
 
 

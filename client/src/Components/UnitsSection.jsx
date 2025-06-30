@@ -1,5 +1,5 @@
 import React from "react";
-import TowerImage2 from "../assets/106.png";
+import TowerImage2 from "../assets/106.webp";
 import { Link } from "react-router-dom";
 
 const UnitsSection = () => {

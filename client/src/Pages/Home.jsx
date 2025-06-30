@@ -9,6 +9,7 @@ const AboutSection = lazy(() => import('../Components/AboutSection'));
 const Enquiry = lazy(() => import('../Components/Enquiry'));
 const UnitsSection = lazy(() => import('../Components/UnitsSection'));
 const AmenitiesSection = lazy(() => import('../Components/AmenitiesSection'));
+const TownHouseSection = lazy(() => import('../Components/TownHouseSection'));
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         <HeroSection />
         <CallBackForm />
         <TowerSection />
+        <TownHouseSection/>
         <AboutSection />
         <Enquiry />
         <AmenitiesSection />

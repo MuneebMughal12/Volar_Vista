@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
-import heroImage from "../assets/hEROBG.png";
+// import heroImage from "../assets/hEROBG.webp";
 // import VedioBg from "../assets/VedioBg.mp4"
 
 const ResponsiveHeading = () => {
@@ -52,7 +52,7 @@ const HeroSection = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background vedio */}
   <img
-         src={heroImage}
+         src="https://res.cloudinary.com/dz4eexjrs/image/upload/v1751293472/hEROBG_d1y3xb.webp"
          alt="Background"
          className="absolute top-0 left-0 w-full h-full object-cover"
        />

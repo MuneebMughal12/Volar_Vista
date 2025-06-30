@@ -147,7 +147,7 @@ const Forms = () => {
       <div className="w-full h-96 mt-8">
         <iframe
           className="w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106321.00098736606!2d72.96971106267803!3d33.61746408510055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df968cc976c5dd%3A0x758752f60a63e2e0!2sI-14%2F3%20I-14%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1741259746800!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1236.7846714231725!2d-0.2452746!3d5.6961493!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDEnNDUuOSJOIDDCsDE0JzQxLjIiVw!5e1!3m2!1sen!2s!4v1751292805711!5m2!1sen!2s"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

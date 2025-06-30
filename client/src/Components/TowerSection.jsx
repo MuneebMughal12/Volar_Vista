@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Aboutbg from "../assets/volarsatictower.png";
-import skydle from "../assets/skydle.png";
+import Aboutbg from "../assets/volarsatictower.webp";
+import skydle from "../assets/skydle.webp";
 
 const TowerSection = () => {
   const features = [
