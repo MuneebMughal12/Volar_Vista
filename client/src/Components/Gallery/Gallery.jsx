@@ -53,7 +53,18 @@ export default function Exterior() {
         <div>
             {/* Background Section */}
             <div className="relative w-full h-[64vh] overflow-hidden">
-                <img src={bgGallery} alt="Units Background" className="absolute top-0 left-0 w-full h-full " />
+                {/* <div className="w-full"> */}
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full rounded-lg object-fill"
+                >
+                    <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751374888/extroribg_xj8qvg.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                {/* </div> */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center" style={{ fontFamily: '"Montserrat', textShadow: "rgba(0, 0, 0, 0.4) 0px 4px 5px" }}>
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
@@ -178,8 +189,9 @@ export default function Exterior() {
                     <img
                         src={images[currentIndex]}
                         alt="Gallery"
-                        className="w-full h-full  transition-all duration-700 ease-in-out"
+                        className="w-full h-full object-contain md:object-cover transition-all duration-700 ease-in-out"
                     />
+
 
                     {/* Navigation Arrows */}
                     <button
@@ -196,7 +208,7 @@ export default function Exterior() {
                     </button>
 
                     {/* Thumbnails */}
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black bg-opacity-50 p-2 rounded-lg">
+                    <div className="hidden md:flex absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 bg-black bg-opacity-50 p-2 rounded-lg">
                         {images.map((img, index) => (
                             <img
                                 key={index}
@@ -208,13 +220,14 @@ export default function Exterior() {
                             />
                         ))}
                     </div>
-                    
+
+
                 </div>
-                 <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
 
                 {/* Video Showcase Section */}
                 <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
                         Experience Valor Vista in Motion
                     </h2>
                     <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
@@ -223,29 +236,32 @@ export default function Exterior() {
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
-                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751365897/bgvedio_matvfs.mp4" type="video/mp4" />
+                            <source
+                                src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751365897/bgvedio_matvfs.mp4"
+                                type="video/mp4"
+                            />
                             Your browser does not support the video tag.
                         </video>
-
                     </div>
                 </div>
 
-                
+
+
                 {/* Video 3bed type 2 Section */}
                 <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
-                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
                     <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
                         Experience 3D Volar Vista 3Bed Type-2
                     </h2>
-                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                  <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
                         <video
                             autoPlay
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
                             <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751367406/extriortype2_hxdjk8.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -253,20 +269,20 @@ export default function Exterior() {
 
                     </div>
                 </div>
-                
+
                 {/* Video 3bed type 1 Section */}
                 <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
-                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
                     <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
-                       Experience 3D Volar Vista 3Bed Type-1
+                        Experience 3D Volar Vista 3Bed Type-1
                     </h2>
-                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                  <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
                         <video
                             autoPlay
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
                             <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751367355/extriortype1_w759fv.mp4" type="video/mp4" />
                             Your browser does not support the video tag.

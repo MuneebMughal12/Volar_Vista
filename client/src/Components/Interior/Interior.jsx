@@ -110,7 +110,7 @@ const Interior = () => {
                 <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
                     
                     <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
-                       Experience 3D Volar Vista Beds
+                       Experience 3D Volar Vista Bed
                     </h2>
                     <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
                         <video
@@ -118,7 +118,7 @@ const Interior = () => {
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
                             <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368295/M_qzte6t.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -138,7 +138,7 @@ const Interior = () => {
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
                             <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368278/J_fbtaxy.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -158,7 +158,7 @@ const Interior = () => {
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
                             <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368284/K_dbhepd.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -178,7 +178,7 @@ const Interior = () => {
                             loop
                             muted
                             playsInline
-                            className="w-full h-[500px] rounded-lg object-cover"
+                            className="w-full  rounded-lg object-cover"
                         >
                             <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368480/L_itenmj.mp4" type="video/mp4" />
                             Your browser does not support the video tag.

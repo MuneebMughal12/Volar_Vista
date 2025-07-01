@@ -54,7 +54,7 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-        className="w-full h-full rounded-lg object-cover"
+        className="w-full h-full rounded-lg object-fill md:object-cover"
       >
         <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751367679/volarvista-bg_zes1fx.mp4"
          type="video/mp4" />

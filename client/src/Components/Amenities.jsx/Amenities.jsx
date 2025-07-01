@@ -121,7 +121,7 @@ friends, and enjoy carefree fun—just steps from home.`,
                   {title}
                 </h2>
               ) : (
-                <p className={`text-xl text-white text-center ${isTextLeft ? "md:text-left" : "md:text-right"}`}>
+                <p className={`text-lg md:text-xl text-white text-center ${isTextLeft ? "md:text-left" : "md:text-right"}`}>
                   {text}
                 </p>
               )}
