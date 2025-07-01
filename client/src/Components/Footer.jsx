@@ -55,14 +55,16 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
+         {/* Footer Bottom */}
       <div className="mt-8 text-lg text-gray-600 text-center">
         <p>
-          Keywords: 1bhk flat in TheUrbanOasis, 2bhk flat in TheUrbanOasis, 3bhk flat in TheUrbanOasis, Pent HOuse in TheUrbanOasis, luxury apartments, etc.
+          Keywords: 3bed type-2 in VOLAR-VISTA, 3bed type-1 in VOLAR-VISTA,  luxury apartments, etc.
         </p>
         <p className="mt-4">
-          © 2022 by TheUrbanOais. Proudly created with <a href="https://github.com/MuneebMughal12" target="_blank" rel="noopener noreferrer" className="underline">Muneeb Aziz</a>.
+          © 2025 by VOLAR-VISTA. Proudly created with <a href="https://github.com/MuneebMughal12" target="_blank" rel="noopener noreferrer" className="underline">Muneeb Aziz</a>.
         </p>
       </div>
+     
 
     </footer>
   );

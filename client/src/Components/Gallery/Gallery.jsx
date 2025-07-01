@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import bgGallery from "./16.webp"
 import { motion } from "framer-motion";
@@ -7,8 +7,49 @@ import logo from "./logo_12345-removebg-preview.webp"
 import volarimprison1 from "./volarimprison1.webp"
 import volarimprison2 from "./volarimprison2.webp"
 import volarimprison3 from "./volarimprison3.webp"
+// import vedio1 from "/videos/BgVedio.mp4"
+// slider
+import ImageGallery1 from "./16.webp"
+import ImageGallery2 from "./15.webp"
+import ImageGallery3 from "./27.webp"
+import ImageGallery4 from "./21.webp"
+import ImageGallery5 from "./40.webp"
+import ImageGallery6 from "./44.webp"
+import ImageGallery7 from "./45.webp"
+import ImageGallery8 from "./48.webp"
+import ImageGallery9 from "./5.webp"
+import ImageGallery10 from "./50.webp"
+import ImageGallery11 from "./54.webp"
+import ImageGallery12 from "./61.webp"
+import ImageGallery13 from "./79.webp"
+import ImageGallery14 from "./9.webp"
+
+const images = [ImageGallery1, ImageGallery2, ImageGallery3, ImageGallery4, ImageGallery5, ImageGallery6, ImageGallery7, ImageGallery8, ImageGallery9, ImageGallery10, ImageGallery11,
+    ImageGallery12, ImageGallery13, ImageGallery14];
 
 export default function Exterior() {
+
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Manual navigation (still useful)
+    const prevSlide = () => {
+        setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    };
+
+    const nextSlide = () => {
+        setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    };
+
+    // ✅ Auto Slide every 4 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+        }, 4000); // 4000ms = 4 seconds
+
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, [images.length]);
+
     return (
         <div>
             {/* Background Section */}
@@ -133,6 +174,62 @@ export default function Exterior() {
                         </div>
                     </div>
                 </div>
+                <div className="relative  w-full h-screen overflow-hidden">
+                    {/* Main Image */}
+                    <img
+                        src={images[currentIndex]}
+                        alt="Gallery"
+                        className="w-full h-full  transition-all duration-700 ease-in-out"
+                    />
+
+                    {/* Navigation Arrows */}
+                    <button
+                        className="absolute top-1/2 left-6 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg"
+                        onClick={prevSlide}
+                    >
+                        <FaArrowLeft md:size={24} size={10} className="text-gray-800" />
+                    </button>
+                    <button
+                        className="absolute top-1/2 right-6 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg"
+                        onClick={nextSlide}
+                    >
+                        <FaArrowRight md:size={24} size={10} className="text-gray-800" />
+                    </button>
+
+                    {/* Thumbnails */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black bg-opacity-50 p-2 rounded-lg">
+                        {images.map((img, index) => (
+                            <img
+                                key={index}
+                                src={img}
+                                alt="Thumbnail"
+                                className={`w-16 h-12 object-cover cursor-pointer rounded-md transition-all duration-300 border-2 ${index === currentIndex ? "border-white" : "border-transparent"
+                                    }`}
+                                onClick={() => setCurrentIndex(index)}
+                            />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Video Showcase Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                        Experience Valor Vista in Motion
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="/videos/BgVedio.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
             </div>
 
 
