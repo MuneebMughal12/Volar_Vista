@@ -105,6 +105,87 @@ const Interior = () => {
 
                 <div className="mt-10 border-t border-[#c08d31] w-[90%] mx-auto" />
             </div>
+
+                 {/* Video BEDS Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                    
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                       Experience 3D Volar Vista Beds
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368295/M_qzte6t.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
+                 {/* Video Bath Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                       Experience 3D Volar Vista Bath
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368278/J_fbtaxy.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
+                 {/* Video Kitchen Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                       Experience 3D Volar Vista Kitchen
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368284/K_dbhepd.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
+                 {/* Video Tv lounge Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                       Experience 3D Volar Vista Tv lounge
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751368480/L_itenmj.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
         </div>
     );
 };

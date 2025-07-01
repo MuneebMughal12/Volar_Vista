@@ -7,7 +7,6 @@ import logo from "./logo_12345-removebg-preview.webp"
 import volarimprison1 from "./volarimprison1.webp"
 import volarimprison2 from "./volarimprison2.webp"
 import volarimprison3 from "./volarimprison3.webp"
-// import vedio1 from "/videos/BgVedio.mp4"
 // slider
 import ImageGallery1 from "./16.webp"
 import ImageGallery2 from "./15.webp"
@@ -209,7 +208,9 @@ export default function Exterior() {
                             />
                         ))}
                     </div>
+                    
                 </div>
+                 <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
 
                 {/* Video Showcase Section */}
                 <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
@@ -224,9 +225,53 @@ export default function Exterior() {
                             playsInline
                             className="w-full h-[500px] rounded-lg object-cover"
                         >
-                            <source src="/videos/bgvideo.mp4" type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751365897/bgvedio_matvfs.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
+
+                    </div>
+                </div>
+
+                
+                {/* Video 3bed type 2 Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                        Experience 3D Volar Vista 3Bed Type-2
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751367406/extriortype2_hxdjk8.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
+                
+                {/* Video 3bed type 1 Section */}
+                <div className="bg-[#1f4141] py-20 text-center text-white font-montserrat">
+                     <div className="mt-10 mb-10 border-t border-[#c08d31] w-[90%] mx-auto" />
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#c08d31] mb-10">
+                       Experience 3D Volar Vista 3Bed Type-1
+                    </h2>
+                    <div className="relative w-[90%] max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-[500px] rounded-lg object-cover"
+                        >
+                            <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751367355/extriortype1_w759fv.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
                     </div>
                 </div>
 

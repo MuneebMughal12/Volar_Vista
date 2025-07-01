@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
-// import heroImage from "../assets/hEROBG.webp";
-// import VedioBg from "../assets/VedioBg.mp4"
 
 const ResponsiveHeading = () => {
   const [letterSpacing, setLetterSpacing] = useState("2rem");
@@ -51,11 +49,17 @@ const HeroSection = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background vedio */}
-  <img
-         src="https://res.cloudinary.com/dz4eexjrs/image/upload/v1751293472/hEROBG_d1y3xb.webp"
-         alt="Background"
-         className="absolute top-0 left-0 w-full h-full object-cover"
-       />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full rounded-lg object-cover"
+      >
+        <source src="https://res.cloudinary.com/dz4eexjrs/video/upload/v1751367679/volarvista-bg_zes1fx.mp4"
+         type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
 
       {/* Overlay */}
