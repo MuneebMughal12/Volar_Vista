@@ -21,14 +21,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#172D2D]  px-6 py-4 flex items-center justify-between md:justify-around w-full" style={{ fontFamily: '"Montserrat' }}>
+    <nav className="bg-[#172D2D] h-36 px-6 py-4 flex items-center justify-between md:justify-around w-full" style={{ fontFamily: '"Montserrat' }}>
       {/* Logo */}
       <div className="text-white font-semibold">
       <Link to="/"> 
         <img
           src={Logo}
           alt="VALOR VISTA"
-          className="h-32 w-32 "
+          className="max-h-56 w-auto "
         />
       </Link>
     </div>

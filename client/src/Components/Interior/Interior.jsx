@@ -1,10 +1,10 @@
 import React from "react";
-import bedroomImg from "./bedroom1.jpeg";
-import bathroomImg from "./bath1.jpeg";
-import bed2 from "./bedroom2.jpeg";
-import bath2 from "./bath2.jpeg";
-import logo from "./logo_12345-removebg-preview.png";
-import bginterior from "./bginterior.jpg";
+import bedroomImg from "./bedroom1.webp";
+import bathroomImg from "./bath1.webp";
+import bed2 from "./bedroom2.webp";
+import bath2 from "./bath2.webp";
+import logo from "./logo_12345-removebg-preview.webp";
+import bginterior from "./bginterior.webp";
 import { motion } from "framer-motion";
 
 const Interior = () => {

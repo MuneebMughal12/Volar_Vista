@@ -1,16 +1,16 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
-import Aminities from "./Amenities.jpg";
+import Aminities from "./Amenities.webp";
 import { motion } from "framer-motion";
-import Gym from "./gym.png"
-import Gym2 from "./gym2.png";
-import pool from "./Pool.png";
-import pool2 from "./Pool2.png";
-import Rooftop from "./Roop1.png"
-import Rooftop2 from "./roop2.png";
-import imagineBg from "./imagine.jpg";
-import Child from "./playingarea.png";
-import Child2 from "./playingarea2.png";
+import Gym from "./gym.webp"
+import Gym2 from "./gym2.webp";
+import pool from "./Pool.webp";
+import pool2 from "./Pool2.webp";
+import Rooftop from "./Roop1.webp"
+import Rooftop2 from "./roop2.webp";
+import imagineBg from "./imagine.webp";
+import Child from "./playingarea.webp";
+import Child2 from "./playingarea2.webp";
 
 
 

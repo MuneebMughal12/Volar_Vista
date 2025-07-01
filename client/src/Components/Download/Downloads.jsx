@@ -4,7 +4,7 @@ import { FaCogs, FaEye, FaFlask, FaHardHat, FaProjectDiagram } from "react-icons
 import { GiStoneStack, GiMountainCave } from "react-icons/gi";
 import { MdEngineering } from "react-icons/md";
 import Logo from "../../assets/logo_12345-removebg-preview.png"
-import bgteam from "./team.jpg"
+import bgteam from "./team.webp"
 
 const teamRoles = [
   { icon: <MdEngineering className="text-[#c08d31] text-4xl" />, title: "MEP TEAM" },

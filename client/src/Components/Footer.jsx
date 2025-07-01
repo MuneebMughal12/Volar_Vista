@@ -10,14 +10,14 @@ const Footer = () => {
         
         {/* Left Section - Logo & Contact */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <img src={logo}alt="Skydale Logo" className="h-40" />
+          <img src={logo}alt="Skydale Logo" className="h-56" />
           {/* <p className="text-xl font-semibold tracking-wide mt-2">LIVE ON CLOUD 9</p> */}
 
           <div className="mt-4 text-sm">
             <p className="text-xl"><strong>CALL :</strong> +233240301874 <br /> +27734484461</p>
             <p className="text-xl"><strong>TELEFA :</strong> +233302245348ery tr</p>
             <p className="text-xl"><strong>WhatsApp :</strong>+233240301874 </p>
-            <p className="text-xl"><strong>EMAIL :</strong> <a href="mailto:theurbanoasis@gmail.com" className="underline">theurbanoasis@gmail.com</a></p>
+            <p className="text-xl"><strong>EMAIL :</strong> <a href="mailto:pioneerghanaltd@gmail.com" className="underline">pioneerghanaltd@gmail.com</a></p>
         
             <p className="mt-2 text-xl"><strong>ADDRESS :</strong></p>
             <p className="text-lg">Plot No.146 c, Street Sechni, Block 1, Parcel 146,</p>

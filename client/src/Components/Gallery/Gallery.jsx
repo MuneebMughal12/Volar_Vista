@@ -1,30 +1,19 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import bgGallery from "./bgGallery.avif"
+import bgGallery from "./16.webp"
 import { motion } from "framer-motion";
-import volarimprison from "./volarimprison.png"
-import logo from "./logo_12345-removebg-preview.png"
-import volarimprison1 from "./volarimprison1.png"
-import volarimprison2 from "./volarimprison2.png"
-import volarimprison3 from "./volarimprison3.png"
-// const images = [ImageGallery1, ImageGallery2, ImageGallery3, ImageGallery4, ImageGallery5];
+import volarimprison from "./volarimprison.webp"
+import logo from "./logo_12345-removebg-preview.webp"
+import volarimprison1 from "./volarimprison1.webp"
+import volarimprison2 from "./volarimprison2.webp"
+import volarimprison3 from "./volarimprison3.webp"
 
-// export default function FullPageGallery() {
-//     const [currentIndex, setCurrentIndex] = useState(0);
-
-//     const prevSlide = () => {
-//         setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-//     };
-
-//     const nextSlide = () => {
-//         setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-//     };
 export default function Exterior() {
     return (
         <div>
             {/* Background Section */}
             <div className="relative w-full h-[64vh] overflow-hidden">
-                <img src={bgGallery} alt="Units Background" className="absolute top-0 left-0 w-full h-full object-cover" />
+                <img src={bgGallery} alt="Units Background" className="absolute top-0 left-0 w-full h-full " />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center" style={{ fontFamily: '"Montserrat', textShadow: "rgba(0, 0, 0, 0.4) 0px 4px 5px" }}>
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
@@ -151,43 +140,6 @@ export default function Exterior() {
 
 
 
-
-            {/* <div className="relative  w-full h-screen overflow-hidden"> */}
-            {/* Main Image */}
-            {/* <img
-                    src={images[currentIndex]}
-                    alt="Gallery"
-                    className="w-full h-full  transition-all duration-700 ease-in-out"
-                /> */}
-
-            {/* Navigation Arrows */}
-            {/* <button
-                    className="absolute top-1/2 left-6 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg"
-                    onClick={prevSlide}
-                >
-                    <FaArrowLeft md:size={24} size={10} className="text-gray-800" />
-                </button>
-                <button
-                    className="absolute top-1/2 right-6 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg"
-                    onClick={nextSlide}
-                >
-                    <FaArrowRight md:size={24} size={10} className="text-gray-800" />
-                </button> */}
-
-            {/* Thumbnails */}
-            {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black bg-opacity-50 p-2 rounded-lg">
-                    {images.map((img, index) => (
-                        <img
-                            key={index}
-                            src={img}
-                            alt="Thumbnail"
-                            className={`w-16 h-12 object-cover cursor-pointer rounded-md transition-all duration-300 border-2 ${index === currentIndex ? "border-white" : "border-transparent"
-                                }`}
-                            onClick={() => setCurrentIndex(index)}
-                        />
-                    ))}
-                </div>
-            </div> */}
         </div>
     );
 }

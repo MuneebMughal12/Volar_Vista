@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-import bgunit from "./unitbg.avif";
-import heroImage from "./hEROBG.png";
-import logo from "./logo_12345-removebg-preview.png";
-import type2 from "./TYPE2.png";
-import modern1 from "./38.png"
-import modern2 from "./114.png"
+import bgunit from "./unitbg.webp";
+import heroImage from "./hEROBG.webp";
+import logo from "./logo_12345-removebg-preview.webp";
+import type2 from "./TYPE2.webp";
+import modern1 from "./38.webp"
+import modern2 from "./114.webp"
 
 
 // 1kbh
 
-import type1 from "./one/3type1.jpg"
-import first from "./one/3type2.jpg"
-import type3 from "./one/3type3.jpg"
+import type1 from "./one/3type1.webp"
+import first from "./one/3type2.webp"
+import type3 from "./one/3type3.webp"
 // 3kbh
-import bedtype2 from "./three/bedtype2.jpg"
-import bedtype3 from "./three/bedtype3.jpg";
-import bedtype1 from "./three/bedtype1.jpg"
+import bedtype2 from "./three/bedtype2.webp"
+import bedtype3 from "./three/bedtype3.webp";
+import bedtype1 from "./three/bedtype1.webp"
 
 
 const MasterPlan = () => {
