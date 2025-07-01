@@ -1,10 +1,24 @@
 
-import { lazy, Suspense } from 'react'
-import loadingImage from '../assets/robot.gif'
+import { lazy, Suspense, useState, useEffect } from 'react'
+import { FaLongArrowAltUp } from "react-icons/fa"
+import loadingImage from '../assets/logo_12345-removebg-preview.png';
 const Contact = lazy(() => import('../Components/Contact/Contact'))
 
 
 const Contactus = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.pageYOffset > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <Suspense
       fallback={
@@ -20,6 +34,15 @@ const Contactus = () => {
     >
       <div>
         <Contact />
+        {/* Scroll to Top Button */}
+        {showButton && (
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-6 left-4 z-50 bg-white text-black px-4 py-2 rounded-full shadow-md hover:bg-[#c08d31] transition-all"
+          >
+            <FaLongArrowAltUp />
+          </button>
+        )}
       </div>
     </Suspense>
   )
