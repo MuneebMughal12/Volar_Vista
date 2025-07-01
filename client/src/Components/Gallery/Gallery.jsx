@@ -224,7 +224,7 @@ export default function Exterior() {
                             playsInline
                             className="w-full h-[500px] rounded-lg object-cover"
                         >
-                            <source src="/videos/BgVedio.mp4" type="video/mp4" />
+                            <source src="/videos/bgvideo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
